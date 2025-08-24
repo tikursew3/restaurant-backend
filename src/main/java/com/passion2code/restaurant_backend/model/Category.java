@@ -6,7 +6,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "categories")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
+@NoArgsConstructor @AllArgsConstructor @Builder
+@Data
 @ToString(exclude = "menuItems")
 public class Category {
     @Id

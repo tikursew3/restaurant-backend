@@ -6,7 +6,8 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "order_items")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
+@NoArgsConstructor @AllArgsConstructor @Builder
+@Data
 @ToString(exclude = {"order", "menuItem"})
 public class OrderItem {
     @Id

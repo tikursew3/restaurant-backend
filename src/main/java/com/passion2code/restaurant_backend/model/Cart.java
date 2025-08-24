@@ -11,7 +11,8 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "carts")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
+@NoArgsConstructor @AllArgsConstructor @Builder
+@Data
 @ToString(exclude = "items")
 public class Cart {
 

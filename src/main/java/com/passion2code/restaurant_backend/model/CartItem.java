@@ -7,7 +7,8 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "cart_items")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
+@NoArgsConstructor @AllArgsConstructor @Builder
+@Data
 @ToString(exclude = {"cart", "menuItem"})
 public class CartItem {
 
