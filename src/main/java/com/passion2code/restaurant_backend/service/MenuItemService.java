@@ -109,7 +109,7 @@ public class MenuItemService {
 
     @Transactional(readOnly = true)
     public MenuItem getById(Long id) {
-        return menuItemRepository.findById(id)
+        return menuItemRepository.findWithDetailsById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Menu item not found: " + id));
     }
 
